@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+
+  demo:
+    image: nginx:latest
+    container_name: demo
+    ports:
+      - "127.0.0.1:8888:80"
+    restart: unless-stopped
